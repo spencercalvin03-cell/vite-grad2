@@ -1,13 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react'
 import { supabase } from '../supabaseClient.js'
 
-export const SCHOOLS = [
-  { id: 'wv', name: 'Westview High',      district: 'Riverside USD', emoji: '🏫' },
-  { id: 'ml', name: 'Maple Leaf Academy', district: 'Riverside USD', emoji: '🍁' },
-  { id: 'rh', name: 'Ridgemont High',     district: 'Valley USD',    emoji: '⛰️'  },
-  { id: 'sh', name: 'Sunrise High',       district: 'Valley USD',    emoji: '🌅' },
-]
-
 const AppContext = createContext(null)
 
 export function AppProvider({ children }) {
